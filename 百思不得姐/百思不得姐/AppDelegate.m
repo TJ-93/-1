@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BDJTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window.rootViewController=[[BDJTabBarController alloc]init];
     return YES;
 }
 
